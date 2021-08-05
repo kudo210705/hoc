@@ -5,6 +5,18 @@ $(function() {
   };
   
   var init = function() {
+    var client = mqtt.connect("ws://mqtt.uko.jp:1883");
+    
+    client.on("connect", () => {
+      console.log("connected");
+      client.subscribe("hopeling_c");
+    });
+    client.on("message", (topic, message) => {
+      console.log(topic + " : " + message);
+    });
+    
+    
+    
     createjs.Sound.addEventListener("fileload", function(e) {
       console.log(e);
       console.log(e.id);
