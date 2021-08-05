@@ -2,6 +2,7 @@
   init();
   
   function button_onClick() {
+    console.log("button_onClick");
     createjs.Sound.play("sound01");
   }
   
