@@ -6,15 +6,15 @@
   }
   
   function init() {
-    // オーディオファイルのロードが終了したならloadHandlerが呼ばれる
-    // createjs.Sound.addEventListener("fileload", loadHandler);
-    createjs.Sound.addEventListener("fileload", function() {
-      var btn = window.document.getElementById("btn");
-      btn.addEventListener("click", button_onClick);
+    createjs.Sound.addEventListerner("fileload", function(e) {
+      console.log(e);
     });
     
     // オーディオファイルを登録
     createjs.Sound.registerSound("sound.mp3", "sound01");
+    
+    var btn = window.document.getElementById("btn");
+    btn.addEventListener("click", button_onClick);
   }
   
   /*
