@@ -7,6 +7,7 @@ $(function() {
   var init = function() {
     createjs.Sound.addEventListener("fileload", function(e) {
       console.log(e);
+      console.log(e.id);
     });
     
     // オーディオファイルを登録
