@@ -5,7 +5,7 @@
     createjs.Sound.addEventListener("fileload", loadHandler);
     
     // オーディオファイルを登録
-    createjs.Sound.registerSound("asserts/sound.mp3", "sound01");
+    createjs.Sound.registerSound("sound.mp3", "sound01");
     
     var buttons = window.document.getElementsByName("sound01");
     for (int i = 0; i < buttons.length; i++) {
