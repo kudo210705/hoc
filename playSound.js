@@ -5,7 +5,8 @@ $(function() {
   };
   
   var init = function() {
-    var client = mqtt.connect("ws://mqtt.uko.jp:1883");
+    var client = mqtt.connect("ws://mqtt.uko.jp:1883", 
+                              { username: "icecream", password: "5oGbReD7" });
     
     client.on("connect", () => {
       console.log("connected");
