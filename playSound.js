@@ -6,7 +6,7 @@
   }
   
   function init() {
-    createjs.Sound.addEventListerner("fileload", function(e) {
+    createjs.Sound.addEventListener("fileload", function(e) {
       console.log(e);
     });
     
