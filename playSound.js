@@ -7,9 +7,7 @@ $(function() {
   var init = function() {
     // var client = mqtt.connect("wss://mqtt.uko.jp:8080", 
     //                           { username: "icecream", password: "5oGbReD7" });
-    var client = mqtt.connect({ 
-      host: "mqtt.uko.jp", 
-      port: 1883, 
+    var client = mqtt.connect("wss://mqtt.uko.jp:8080/hopeling_c", {
       username: "icecream", 
       password: "5oGbReD7" });
     
