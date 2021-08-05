@@ -12,7 +12,7 @@
     // オーディオファイルを登録
     createjs.Sound.registerSound("sound.mp3", "sound01");
     
-    var btn = window.document.getElementById("btn);
+    var btn = window.document.getElementById("btn");
     btn.addEventListener("click", button_onClick);
   }
   
