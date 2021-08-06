@@ -10,7 +10,7 @@ $(function() {
     // var client = mqtt.connect("mqtt://mqtt.uko.jp:1883", {
     //   username: "icecream", 
     //   password: "5oGbReD7" });
-    var client = mqtt.connect("ws://localhost:1883");
+    var client = mqtt.connect("ws://localhost:8883");
     
     client.on("connect", () => {
       console.log("connected");
